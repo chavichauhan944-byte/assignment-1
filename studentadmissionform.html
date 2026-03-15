@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Student Admission Form</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" max="100" placeholder="Enter your age" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="3" cols="30" placeholder="Enter your address" required></textarea><br><br>
+
+        <label for="course">Course Selection:</label><br>
+        <select id="course" name="course" required>
+            <option value="">--Select Course--</option>
+            <option value="BSc">B.Sc</option>
+            <option value="BA">B.A</option>
+            <option value="BCom">B.Com</option>
+            <option value="BTech">B.Tech</option>
+            <option value="MSc">M.Sc</option>
+            <option value="MA">M.A</option>
+        </select><br><br>
+
+        <label for="qualification">Previous Qualification:</label><br>
+        <input type="text" id="qualification" name="qualification" placeholder="e.g. 12th, Diploma" required><br><br>
+
+        <label for="marks">Percentage / Marks:</label><br>
+        <input type="text" id="marks" name="marks" placeholder="Enter your marks or percentage" required><br><br>
+
+        <label for="photo">Upload Photo:</label><br>
+        <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
